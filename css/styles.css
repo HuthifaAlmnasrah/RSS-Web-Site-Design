@@ -95,6 +95,7 @@ a {
 }
 .bage--small {
   font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
 }
 @media screen and (min-width: 1024px) {
   .bage {
@@ -239,4 +240,32 @@ a {
 .card--secondry .card__header {
   background: var(--color-secondry);
   color: white;
+}
+.card--secondry .bage--secondary {
+  background: #02cdf1;
+}
+/* Plnas */
+.plan__name {
+  color: white;
+  margin: 0;
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+.plan__price {
+  font-size: 6rem;
+}
+.plan__billing-cycle {
+  font-size: 2.4rem;
+  font-weight: 300;
+  opacity: 0.8;
+  margin-right: 1rem;
+}
+.plan__description {
+  display: block;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.plan .list__item {
+  margin-bottom: 2rem;
 }
