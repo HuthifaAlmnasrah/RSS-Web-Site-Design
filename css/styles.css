@@ -270,10 +270,16 @@ a {
   background: var(--color-secondry);
   color: white;
 }
+.card--primary .bage--primary {
+  background: #126de4;
+}
 .card--secondry .bage--secondary {
   background: #02cdf1;
 }
 /* Plnas */
+.plan {
+  transition: transform 0.2s ease-out;
+}
 .plan__name {
   color: white;
   margin: 0;
@@ -297,6 +303,9 @@ a {
 }
 .plan .list__item {
   margin-bottom: 2rem;
+}
+.plan:hover {
+  transform: scale(1.05);
 }
 /* Media Objects */
 .media {
@@ -540,4 +549,12 @@ a {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+}
+/* Plans Block */
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
