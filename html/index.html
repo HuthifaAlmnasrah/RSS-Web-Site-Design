@@ -12,9 +12,419 @@
     />
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
   </head>
   <body>
+    <!-- Navigation Bar  -->
+    <header>
+      <nav class="nav collapsible" data-aos="zoom-in">
+        <a class="nav_brand" href="/"
+          ><img src="/images/RSS-logo.svg" alt=""
+        /></a>
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="/images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#contact">Contact</a></li>
+          <li class="nav__item"><a href="#">News</a></li>
+          <li class="nav__item"><a href="#campus">Our Campus</a></li>
+          <li class="nav__item"><a href="#partners">Our Partners </a></li>
+          <li class="nav__item"><a href="#sectors">What We Do</a></li>
+          <li class="nav__item"><a href="#ourstory">Our Story </a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Big Image in the start -->
+    <section class="block block--dark block--skewed-left hero">
+      <div class="container grid grid--1x2">
+        <header class="block__header hero__content" data-aos="zoom-out">
+          <h1 class="block__heading">Royal Scientific Society</h1>
+          <p class="hero__tagline">
+            The Royal Scientific Society touches the lives of many Jordanians
+            through its work and impacts the future of Jordan through its
+            research and collaboration.
+          </p>
+          <a href="" class="btn btn--accent">Contact Us</a>
+        </header>
+        <img class="hero__image" src="/images/RSS-logo.svg" alt="" />
+      </div>
+    </section>
+    <!-- Search Section -->
+    <section class="block container block-domain">
+      <header class="block__header">
+        <h2>Searching in our page</h2>
+        <p>Are you looking for something specific, easily search here</p>
+      </header>
+      <div class="input-group" data-aos="zoom-out">
+        <input type="text" class="input" placeholder="Search here ..." />
+        <button class="btn btn--accent">
+          <svg class="icon icon--white">
+            <use xlink:href="/images/sprite.svg#search"></use>
+          </svg>
+          Sreach
+        </button>
+      </div>
+      <ul class="list block-domain__prices">
+        <li><span class="bage bage--secondary">Testing</span></li>
+        <li>Testing</li>
+        <li>Society</li>
+        <li>Services</li>
+        <li>Training</li>
+        <li>Consultations</li>
+      </ul>
+    </section>
+    <!-- Main section  -->
+    <section id="sectors" class="block container">
+      <header class="block__header">
+        <h2>Our Sectors</h2>
+        <p>
+          The RSS campus combines practical science and technology services with
+          research capacity and policy and engagement expertise. Through our
+          various sectors, we provide solutions, stimulate debate, and craft the
+          best evidence-based advice for the nation.
+        </p>
+      </header>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="fade-right">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="/images/sprite.svg#easy"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Standards & Technology</h3>
+          <p>
+            RSS Standards & Technology sector supports the Quality
+            Infrastructure in Jordan and it includes: Testing Laboratories, The
+            Jordan National Metrology Institute (JNMI), The Conformity
+            Assessment Centre and The Engineering Maintenance / Directorate of
+            Bio-Medical Engineering. The RSS supports Jordanian businesses with
+            the dynamic and ever-evolving nature of international requirements
+            with flexibility and efficiency.
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+        <img
+          class="feature__image"
+          src="/images/img1.jpg"
+          alt=""
+          data-aos="zoom-in-left"
+        />
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="fade-right">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="/images/sprite.svg#easy"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Research & Development</h3>
+          <p>
+            The Royal Scientific Society has a rich history of spearheading
+            meaningful research with an ethical and developmental mandate.
+            Through dedicated research centres with strategic specialties, we
+            help build the national foundations for directed and effective
+            research with valuable outcomes. The impact of our research efforts
+            ranges from solving local every-day problems to affecting public
+            policy.
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+        <img
+          class="feature__image"
+          src="/images/img2.jpg"
+          alt=""
+          data-aos="zoom-in-left"
+        />
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="fade-right">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="/images/sprite.svg#easy"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">ICT for Development</h3>
+          <p>
+            One of the main technical arms of The Royal Scientific Society,
+            which supports its operations and conducts applied R&D in ICT,
+            yielding high quality commercialisable products. ICT specialisation
+            has always been an integral part of the RSS since 1972. ICT for
+            Development is committed to performing applied research and
+            specialised technical consultations and services according to
+            international best practices and standards. We have been ISO 9001
+            certified since January 2001.
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+        <img
+          class="feature__image"
+          src="/images/img3.jpg"
+          alt=""
+          data-aos="zoom-in-left"
+        />
+      </article>
+    </section>
+    <!-- sectors section -->
+    <section id="partners" class="block container block-plans">
+      <header class="block__header">
+        <h2>Our Partners</h2>
+        <p>
+          RSS is Jordan’s hub for collaboration and exchange, where science and
+          technology underpin innovative research, education and
+          entrepreneurship. Working with our partners, we strive to ensure that
+          more and more Jordanians have a stake in the unfolding story of our
+          nation.
+        </p>
+      </header>
+      <div class="grid grid--1x3">
+        <div data-aos="fade-up">
+          <div class="plan">
+            <div class="card card--secondry">
+              <header class="card__header">
+                <span class="plan__description"
+                  >Princess Sumaya University for Technology</span
+                >
+              </header>
+              <div class="card__body">
+                <ul class="list list--tick">
+                  <li class="list__item">
+                    Established in 1991, the Princess Sumaya University for
+                    Technology (PSUT) is the vibrant academic component of the
+                    RSS campus.
+                  </li>
+                </ul>
+                <button class="btn btn--outline btn-block">Vist Website</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade">
+          <div class="plan">
+            <div class="card card--secondry">
+              <header class="card__header">
+                <span class="plan__description"
+                  >iPARK Jordan’s Technology Incubator</span
+                >
+              </header>
+              <div class="card__body">
+                <ul class="list list--tick">
+                  <li class="list__item">
+                    The innovation hub of the RSS campus, iPark was Jordan’s
+                    first business incubator.
+                  </li>
+                </ul>
+                <button class="btn btn--outline btn-block">Vist Website</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up">
+          <div class="plan">
+            <div class="card card--secondry">
+              <header class="card__header">
+                <span class="plan__description">The Jordan Museum</span>
+              </header>
+              <div class="card__body">
+                <ul class="list list--tick">
+                  <li class="list__item">
+                    Under the care and management of RSS, the Jordan Museum
+                    presents the history and cultural heritage of Jordan at a
+                    series of beautifully designed galleries in downtown Amman.
+                  </li>
+                </ul>
+                <button class="btn btn--outline btn-block">
+                  Visit Website
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--secondry section  -->
+    <section
+      id="campus"
+      class="block block--dark block--skewed-right block-showcase"
+    >
+      <header class="block__header" data-aos="zoom-out">
+        <h2>On Campus</h2>
+        <p>
+          The RSS campus is home to a range of specialised organisations that
+          deploy science and technology to strive for excellence in specific
+          fields. Working both independently and collaboratively, they enrich
+          the RSS ecosystem and help to drive knowledge-based change in Jordan.
+        </p>
+      </header>
+      <div class="container grid grid--1x2" data-aos="zoom-out-left">
+        <img class="block-showcase__image" src="/images/RSS-logo.svg" alt="" />
+        <ul class="list">
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <span class="icon-container">
+                  <svg class="icon--small icon--primary">
+                    <use xlink:href="/images/sprite.svg#growth"></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">IRADA</h3>
+                <p class="">
+                  Funded by MoPIC and managed by RSS, IRADA’s mission is to
+                  improve the living standards of Jordanians, with a particular
+                  emphasis on low income communities and individuals in rural
+                  and remote parts of the Kingdom. IRADA supports the design and
+                  implementation of productivity projects by providing advisory
+                  services and technical training. The IRADA program operates
+                  through 28 centres in the Central, Northern, and Southern
+                  Governorates.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <span class="icon-container">
+                  <svg class="icon--small icon--primary">
+                    <use xlink:href="/images/sprite.svg#growth"></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">West Asia – North Africa Institute</h3>
+                <p class="">
+                  The West Asia – North Africa (WANA) Institute is a
+                  not-for-profit policy think-tank based at the RSS campus.
+                  Under the chairmanship of HRH Prince El Hassan bin Talal,
+                  Chairman of RSS, the Institute works to promote a transition
+                  to evidence-based policymaking and programming in order to
+                  respond to the developmental and humanitarian challenges
+                  facing West Asia and North Africa.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div id="ourstory" class="card testimonial" data-aos="fade-up">
+      <div class="grid grid--1x2">
+        <div class="testimonial__image">
+          <img src="/images/img4.jpg" alt="A happy customer" />
+          <span class="icon-container icon-container--accent">
+            <svg class="icon icon--primary icon--white">
+              <use xlink:href="/images/sprite.svg#quotes"></use>
+            </svg>
+          </span>
+        </div>
+        <blockquote class="quote">
+          <p class="quote__text">
+            Jordan’s innovation revolution must assist in solving our society’s
+            deep and pressing socio-economic challenges. Global competitiveness,
+            shrinking resource availability, and the requirements of a skilled
+            labour force mean that, increasingly, an awareness and understanding
+            of why science and research are critical to our lives is essential
+            for developing an innovation culture. To fully realise the social,
+            economic, and environmental benefits of the significant investment
+            in science, research, and innovation, we as a country must
+            communicate and engage the wider community more fully in science and
+            in an understanding of the knowledge economy to which we aspire. The
+            RSS acknowledges the role of science engagement in the achievement
+            of the RSS strategic goals. The RSS’ Science Engagement Sector has a
+            crosscutting mandate that aims to strategically align all science
+            engagement activities across the organisation. The Sector is also
+            optimally positioned to contribute towards coordinated, consistent,
+            and effective science communication and engagement policy and
+            implementation that will make a meaningful contribution to bridging
+            the gap between science and society.
+          </p>
+          <footer>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary icon--small">
+                  <use xlink:href="/images/sprite.svg#line"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title quote__author">Huthifa Al Manasrah</h3>
+                <p class="quote__organization">BAU University</p>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+
+    <!-- Fotter -->
+    <footer class="block block--dark footer" id="contact" data-aos="zoom-in">
+      <div class="container grid footer__sections">
+        <section class="collapsible collapsible--expanded footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Site Content</h2>
+            <svg
+              class="icon icon-container--dark icon--white collapsible__chevron"
+            >
+              <use xlink:href="/images/sprite.svg#menu"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">What We Do</a></li>
+              <li><a href="#">Our Partners</a></li>
+              <li><a href="#">Our Campus</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Our RSS</h2>
+            <svg
+              class="icon icon-container--dark icon--white collapsible__chevron"
+            >
+              <use xlink:href="/images/sprite.svg#menu"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">My RSS</a></li>
+              <li><a href="#">Join Us</a></li>
+              <li><a href="#">RSS Quality Policy</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Accreditations</h2>
+            <svg
+              class="icon icon-container--dark icon--white collapsible__chevron"
+            >
+              <use xlink:href="/images/sprite.svg#menu"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">ISO 9001</a></li>
+              <li><a href="#">ISO 17020</a></li>
+              <li><a href="#">ISO 17025</a></li>
+              <li><a href="#">UKAS</a></li>
+              <li><a href="#">JAS</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer__brand">
+          <img src="/images/RSS-logo.svg" alt="" />
+          <p class="footer__coptright">Copyright 2022 Huthifa Al Manasrah</p>
+        </section>
+      </div>
+    </footer>
     <script src="/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
